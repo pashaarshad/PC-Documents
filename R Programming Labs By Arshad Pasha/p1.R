@@ -39,20 +39,14 @@ char_vector = c("Apple","Banana","Cherry")
 print(char_vector)  
 char_vector
 
-# Matrix 
+# Matrix  
 
-num_matrix <- matrix(1:4,nrow = 2,ncol = 2)
+num_matrix <- matrix(1:6,nrow = 2,ncol = 3)
 num_matrix
 
-# Lists  this is Stores categorical data
-my_list <- list(name=c("John","Daniel","Jack"),
-                age=c(30,53,40),
-                hobbies=c("Reading","Golf","Gaming"))
+# Lists
+my_list <- list(name=c("John","Daniel","Jack"),age=c(30,53,40),hobbies=c("Reading","Golf","Gaming"))
 my_list
-
-my_list$name
-my_list$age
-my_list$hobbies
 
 # OR
 name=c("John","Daniel","Jack")
@@ -63,22 +57,13 @@ my_listNew
 
 
 # DataFrame 
-data <- data.frame(Name=c("Alice","Bennett","Charlie"),
-                   age,
-                   Gender=c("Female","Male","Male"),
-                   hobbies)
+data <- data.frame(Name=c("Alice","Bennett","Charlie"),age,Gender=c("Female","Male","Male"))
 data
 
 # Factors 
 
 gender <- c("Male","Female","Male","Female","Male")
-factor_gender <- factor(gender)
-factor_gender
-
-# See Difference 
-
-gender <- c("Male","Female","Male","Female","Male")
-factor_gender <- factor(gender,levels = c("Female"))
+factor_gender <- factor(gender,levels = c("Male","Female"))
 factor_gender
 
 
@@ -87,7 +72,7 @@ factor_gender
 arr <- array(1:24)
 arr
 #                                (Row,Col,NumbersOfTables)
-arr_with_dim <- array(1:24,dim=c(4,3,2))
+arr_with_dim <- array(1:24,dim=c(4,3,1))
 arr_with_dim
 
 
